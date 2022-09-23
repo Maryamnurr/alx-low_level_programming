@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * rev_string - a function that reverse a string
@@ -6,6 +6,7 @@
  * @s: an input string
  * Return: Nothing
  */
+
 void rev_string(char *s)
 {
 	int len = 0, i = 0;
@@ -21,4 +22,5 @@ void rev_string(char *s)
 		s[len] = aux;
 	}
 }	
+
 
