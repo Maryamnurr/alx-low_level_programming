@@ -6,15 +6,16 @@
  * @s: an input string
  * Return: Nothing
  */
-void print_rev(char *s)
+void reverse_array(int *a, int n)
 {
-	int len = 0;
 
-	while (s[len] != '\0')
-		len++;
-	while (len)
-		_putchar(s[--len]);
+	int i = 0;
+	int aux;
 
-	_putchar('\n');
+	while (i < n--)
+	{
+		aux = a[i];
+		a[i++] = a[n];
+		a[n] = aux;
+	}
 }	
- 
